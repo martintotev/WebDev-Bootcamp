@@ -1,0 +1,41 @@
+<!-- Lesson 37 - Radio & Dropdowns -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inputs Demo</title>
+</head>
+
+<body>
+
+    <h1>Login</h1>
+
+    <!-- add required in the <input> field -->
+    <p>Do you prefer cats or dogs?</p>
+
+    <form action="" method="">
+
+        <label for="dogs">Dogs: </label>
+        <input type="radio" name="petChoice" id="dogs" value="DOGS"> 
+
+        <label for="cats">Cats: </label>
+        <input type="radio" name="petChoice" id="cats" value="CATS">
+
+        <p>What's your current mood?</p>
+        <select name="mood" id="moodSelect">
+            <option value="HAPPY">Smile</option>
+            <option value="INDIFFERENT">Whatever</option>
+            <option value="SAD">Sad</option>
+        </select>
+
+        <textarea name="paragraph" id="" cols="50" rows="10"></textarea>
+
+        <!-- if the button is the last thing in the form it will submit it -->
+        <button>Go!</button>
+
+    </form>
+
+</body>
+
+</html>

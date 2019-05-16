@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Register</h1>
+
+    <form action="">
+
+        <label for="first">First Name: </label>
+        <input name="first" id="first" type="text" placeholder="John" required>
+        <label for="last">Last Name: </label>
+        <input name="last" id="last" type="text" placeholder="Smith" required>
+
+        <div>
+            <label for="male">Male</label>
+            <input name="gender" id="male" type="radio" value="male">
+            <label for="female">Female</label>
+            <input name="gender" id="female" type="radio" value="female">
+            <label for="other">Other</label>
+            <input name="gender" id="other" type="radio" value="other">
+        </div>
+
+        <div>
+            <label for="">E-mail:
+                <input name="email" type="email" placeholder="e-mail address" required>
+            </label>
+            <label for="">Password:
+                <input type="password" placeholder="Password" pattern=".{5,10}" required title="Password must be between 5 to 10 characters">
+            </label>
+        </div>
+
+        <div> <label for="birthday">Birthday:
+                <select name="day" placeholder="Day">
+                    <option value="">Day</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                </select>
+                <select name="month" placeholder="Month">
+                    <option value="">Month</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                </select>
+                <select name="year" placeholder="Year">
+                    <option value="">Year</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <label for="agreed">I agree to the terms and conditions</label>
+                <input id="agreed" name="agreed" type="checkbox" required>
+            
+        </div>
+
+        <button>Submit</button>
+
+    </form>
+</body>
+
+</html>
